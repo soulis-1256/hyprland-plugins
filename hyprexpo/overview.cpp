@@ -36,7 +36,8 @@ COverview::COverview(PHLWORKSPACE startedOn_, bool swipe_) : startedOn(startedOn
 
     SIDE_LENGTH = **PCOLUMNS;
     GAP_WIDTH   = **PGAPS;
-    BG_COLOR    = **PCOL;
+    //BG_COLOR    = **PCOL;
+    BG_COLOR = CColor{255, 0, 0, 1.0};
 
     // process the method
     bool     methodCenter  = true;
@@ -213,7 +214,7 @@ COverview::COverview(PHLWORKSPACE startedOn_, bool swipe_) : startedOn(startedOn
     touchMoveHook = g_pHookSystem->hookDynamic("touchMove", onCursorMove);
 
     mouseButtonHook = g_pHookSystem->hookDynamic("mouseButton", onCursorSelect);
-    touchUpHook = g_pHookSystem->hookDynamic("touchUp", onCursorSelect);
+    touchUpHook     = g_pHookSystem->hookDynamic("touchUp", onCursorSelect);
 }
 
 void COverview::redrawID(int id, bool forcelowres) {
