@@ -37,7 +37,7 @@ COverview::COverview(PHLWORKSPACE startedOn_, bool swipe_) : startedOn(startedOn
     SIDE_LENGTH = **PCOLUMNS;
     GAP_WIDTH   = **PGAPS;
     //BG_COLOR    = **PCOL;
-    BG_COLOR = CColor{255, 0, 0, 1.0};
+    BG_COLOR = CColor{0, 0, 255, 1.0};
 
     // process the method
     bool     methodCenter  = true;
