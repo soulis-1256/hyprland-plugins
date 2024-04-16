@@ -13,46 +13,6 @@ commit_pins = [
     ["360ede79d124ffdeebbe8401f1ac4bc0dbec2c91", "e45066d0741a1a4b9298a4c5ec43a5e57b059a4e"]  # 0.38.1
 ]
 
-[borders-plus-plus]
-description = "A plugin to add more borders to windows."
-authors = ["Vaxry"]
-output = "borders-plus-plus/borders-plus-plus.so"
-build = [
-    "make -C borders-plus-plus all",
-]
-
-[csgo-vulkan-fix]
-description = "A plugin to fix incorrect mouse offsets on csgo in Vulkan"
-authors = ["Vaxry"]
-output = "csgo-vulkan-fix/csgo-vulkan-fix.so"
-build = [
-    "make -C csgo-vulkan-fix all",
-]
-
-[hyprbars]
-description = "A plugin to add title bars to windows"
-authors = ["Vaxry"]
-output = "hyprbars/hyprbars.so"
-build = [
-    "make -C hyprbars all",
-]
-
-[hyprtrails]
-description = "A plugin to add trails behind moving windows"
-authors = ["Vaxry"]
-output = "hyprtrails/hyprtrails.so"
-build = [
-    "make -C hyprtrails all",
-]
-
-[hyprwinwrap]
-description = "A clone of xwinwrap for Hyprland"
-authors = ["Vaxry"]
-output = "hyprwinwrap/hyprwinwrap.so"
-build = [
-    "make -C hyprwinwrap all",
-]
-
 [hyprexpo]
 description = "A plugin to add expo (overlay) for workspaces"
 authors = ["Vaxry"]
